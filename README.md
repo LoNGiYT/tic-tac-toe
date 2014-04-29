@@ -1,6 +1,8 @@
-tic-tac-toe
-===========
-int led1R=;
+int latchPin = 5;
+int clockPin = 6;
+int dataPin = 4;
+  
+int led1R=;  
 int led1B=;
 int led2R=;
 int led2B=;
@@ -51,6 +53,16 @@ Serial.begin(9600);
 irrecv.enableIRIn();
 }
 void loop()
+if (led )
+if
+if
+if
+if
+if
+if
+if
+if
+
 {
   int i;
   for(i = 0;i<256;i++)
