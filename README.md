@@ -1,6 +1,9 @@
-int latchPin = 5;
-int clockPin = 6;
-int dataPin = 4;
+int latchPin = 8;
+int clockPin = 10;
+int dataPin = 6;
+int latchPin2 =7;
+int clockPin2 =9;
+int dataPin2 =5;
   
 int led1R=;  
 int led1B=;
@@ -54,7 +57,7 @@ irrecv.enableIRIn();
 }
 void loop()
 if (led )
-if
+if  
 if
 if
 if
