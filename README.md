@@ -44,7 +44,7 @@ updateShiftRegister2(r);
 digitalWrite(red, LOW); 
 digitalWrite(blue, LOW); 
 } 
- //
+ //makes theshift regesters work with the leds and makes them turn blue and red
 void updateShiftRegister(int number) 
 { 
 digitalWrite(LATCH, LOW); 
@@ -57,7 +57,7 @@ digitalWrite(LATCH2, LOW);
 shiftOut(DATA2,CLOCK2, LSBFIRST, number); 
 digitalWrite(LATCH2, HIGH); 
 }  
- 
+ //shifts things in and out
 void loop(){  
  
  
@@ -67,8 +67,6 @@ if(irrecv.decode(&results)){
   
     Serial.println(results.value); 
   
- 
-      //1 
       case 0x010: 
   count+=1; 
   Serial.println(count); 
