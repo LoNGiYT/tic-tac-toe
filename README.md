@@ -44,7 +44,7 @@ updateShiftRegister2(r);
 digitalWrite(red, LOW); 
 digitalWrite(blue, LOW); 
 } 
- //makes theshift regesters work with the leds and makes them turn blue and red
+ //makes theshift regesters work with the leds and makes the led colors for red and blue work
 void updateShiftRegister(int number) 
 { 
 digitalWrite(LATCH, LOW); 
