@@ -66,14 +66,14 @@ if(irrecv.decode(&results)){
     switch(results.value){  
   
     Serial.println(results.value); 
-  
+  //this is how the remote works with the leds threw the irrecever
       case 0x010: 
   count+=1; 
   Serial.println(count); 
   if(count%2 == 1){ 
       p = p + a; 
       updateShiftRegister(p); 
-  
+  //this tells the diffrence bettween the turns of the palyers
       } 
     else{ 
       r = r + a; 
@@ -88,7 +88,7 @@ if(irrecv.decode(&results)){
      digitalWrite(red,LOW); 
      digitalWrite(blue,LOW); 
    } 
-  
+  //this turns off the leds when all nine are lit up after five seconds
       break; 
   
   
@@ -99,7 +99,7 @@ if(irrecv.decode(&results)){
           if(count%2 == 1){ 
             p = p + b; 
     updateShiftRegister(p); 
-  
+  //tells the diffrence between turns when playing tic tac toe
           } 
     else{ 
       r = r + b; 
@@ -115,7 +115,7 @@ if(irrecv.decode(&results)){
      digitalWrite(blue,LOW); 
    } 
       break; 
- 
+  //this turns off the leds when all nine are lit up after five seconds
     //3 
       case 0x410: 
     count+=1; 
@@ -142,7 +142,7 @@ if(irrecv.decode(&results)){
      digitalWrite(red,LOW); 
      digitalWrite(red,LOW); 
    } 
-  
+  //now this code it just moving from button to button from 1-9  so that when the button is pressed it will light up the led that corresponds to that button
      break; 
   
      //6 
